@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blood Bank Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header>
+    <img src="{{ url_for('static', filename='images/blood-bank-logo.png') }}" alt="Blood Bank Logo">
+    <h1>Blood Bank Management System</h1>
+</header>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/donor">Donor</a>
+    <a href="/recipient">Recipient</a>
+    <a href="/blood_inventory">Inventory</a>
+    <a href="/staff">Staff</a>
+    <a href="/donation">Donation</a>
+    <a href="/transfusion">Transfusion</a>
+    <a href="/blood_test">Blood Test</a>
+    <a href="/reports">Reports</a>
+</nav>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer>
+    <p>&copy; 2025 Blood Bank Management</p>
+</footer>
+
+</body>
+</html>

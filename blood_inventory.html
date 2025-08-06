@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Blood Inventory</h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Blood Group</th>
+        <th>Quantity (Units)</th>
+    </tr>
+    {% for blood in blood_data %}
+    <tr>
+        <td>{{ blood[0] }}</td>
+        <td>{{ blood[1] }}</td>
+        <td>{{ blood[2] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

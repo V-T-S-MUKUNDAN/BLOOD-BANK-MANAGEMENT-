@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Blood Test Results</h2>
+<form method="POST">
+    <input type="number" name="donor_id" placeholder="Donor ID" required><br>
+    <input type="date" name="test_date" required><br>
+    <input type="text" name="result" placeholder="Result" required><br>
+    <button type="submit">Submit Result</button>
+</form>
+{% endblock %}

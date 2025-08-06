@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Reports</h2>
+
+<h3>Donors</h3>
+<ul>
+    {% for donor in donors %}
+    <li>{{ donor[1] }} ({{ donor[4] }})</li>
+    {% endfor %}
+</ul>
+
+<h3>Recipients</h3>
+<ul>
+    {% for recipient in recipients %}
+    <li>{{ recipient[1] }} ({{ recipient[4] }})</li>
+    {% endfor %}
+</ul>
+
+<h3>Blood Inventory</h3>
+<ul>
+    {% for blood in inventory %}
+    <li>{{ blood[1] }}: {{ blood[2] }} units</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

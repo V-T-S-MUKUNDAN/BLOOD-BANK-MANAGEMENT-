@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Register Donor</h2>
+<form method="POST">
+    <input type="text" name="name" placeholder="Name" required><br>
+    <input type="number" name="age" placeholder="Age" required><br>
+    <input type="text" name="gender" placeholder="Gender" required><br>
+    <input type="text" name="blood_group" placeholder="Blood Group" required><br>
+    <input type="text" name="contact" placeholder="Contact Number" required><br>
+    <button type="submit">Add Donor</button>
+</form>
+{% endblock %}

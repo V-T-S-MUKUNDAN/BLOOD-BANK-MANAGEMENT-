@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Record Donation</h2>
+<form method="POST">
+    <input type="number" name="donor_id" placeholder="Donor ID" required><br>
+    <input type="date" name="donation_date" required><br>
+    <button type="submit">Record Donation</button>
+</form>
+{% endblock %}
